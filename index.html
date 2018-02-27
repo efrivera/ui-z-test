@@ -15,8 +15,50 @@
 	<div id="root"></div>
 	<script type="text/babel">
 
+		class Header extends React.Component {
+			constructor(props) {
+				super(props);
+			}
+			render() {
+				return (
+					<div className="header fixed-wrapper">
+						<div className={`header-cont ${this.props.position == 'overlapped' ? 'overlapped' : ''}`}>
+							<h1 className="site-name">Rule of thumb</h1>
+							<div className="nav-bar">
+								<a href="pages/past-trials.html">Past Trials</a>
+								<a href="pages/how-it-works.html">How it Works</a>
+								<a href="pages/log-in.html">Log In/Sign Up</a>
+								<a href="#">Search</a>
+							</div>
+						</div>
+					</div>
+				);
+			}
+		}
+
+		class Hero extends React.Component {
+			render() {
+				return (
+					<div className="hero fullscreen">
+						<img alt="poll" src="assets/hero-poll.png"/>
+					</div>
+				);
+			}
+		}
+
+		class LandingPage extends React.Component {
+			render() {
+				return (
+					<div className="page">
+						<Header position="overlapped"/>
+						<Hero/>
+					</div>
+				);
+			}
+		}
+
 		ReactDOM.render(
-			<h1>Hello, world!</h1>,
+			<LandingPage />,
 			document.getElementById('root')
 		);
 

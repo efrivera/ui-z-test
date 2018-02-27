@@ -1,3 +1,54 @@
 body{
-	background: pink;
+	margin: 0;
+}
+
+.page{
+	margin: 0 1rem;
+}
+
+.fixed-wrapper{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.fullscreen{
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+.header{
+	position: relative;
+}
+.header-cont{
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 0;
+}
+
+.overlapped{
+	position: absolute;
+	right: 0;
+	left: 50%;
+	margin-left: -590px;
+}
+
+.site-name{
+	margin: 0;
+	font-size: 3rem;
+}
+
+.nav-bar{
+}
+
+.nav-bar a{
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #fff;
+}
+
+.hero{
+	background: aqua;
+	min-height: 400px;
+	padding-top: 8rem;
 }
